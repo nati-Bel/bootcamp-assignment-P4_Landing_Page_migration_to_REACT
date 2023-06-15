@@ -1,0 +1,17 @@
+.card-item-container {
+    display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.cardImage {
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #ebe7fa;
+}

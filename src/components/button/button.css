@@ -1,0 +1,15 @@
+.btn {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ff556e;
+  color: white;
+  border-style: solid;
+  border-color: #ff556e;
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  gap: 4px;
+  width: max-content;
+}
