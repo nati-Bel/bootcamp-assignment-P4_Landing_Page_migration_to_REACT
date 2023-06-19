@@ -3,6 +3,10 @@ import appleIcon from "../../multimedia/apple-logo-30.png";
 import gPlayIcon from "../../multimedia/google-play-30.png";
 import CardItem from "../../components/card/CardItem";
 import cardImg1 from "../../multimedia/identify-goals.png";
+import cardImg2 from "../../multimedia/situation-analysis.png";
+import cardImg3 from "../../multimedia/task-settings.png";
+import cardImg4 from "../../multimedia/social-interaction.png";
+import cardImg5 from "../../multimedia/get-things-done.png";
 import mobileImg from "../../multimedia/header-iphone.png";
 
 import "./home.css";
@@ -20,36 +24,36 @@ function Home() {
         </p>
       </section>
       <section className="home-container-buttons">
-        <Button btnImage={appleIcon} btnName="DOWNLOAD" />
-        <Button btnImage={gPlayIcon} btnName="DOWNLOAD" />
+        <Button btnImage={appleIcon} btnName="DOWNLOAD" style="btn-pink" />
+        <Button btnImage={gPlayIcon} btnName="DOWNLOAD" style="btn-pink"/>
       </section>
       <section className="home-container-mobile">
         <img src={mobileImg} className="home-mobile-img"/>
       </section>
       <section className="home-container-functions">
         <CardItem
-          className="identifyBkgd"
+          style="identify-icon"
           cardImg={cardImg1}
           cardTxt="Identify Goals"
         />
         <CardItem
-          className="identifyBkgd"
-          cardImg={cardImg1}
+          style="situation-icon"
+          cardImg={cardImg2}
           cardTxt="Situation Analysis"
         />
         <CardItem
-          className="identifyBkgd"
-          cardImg={cardImg1}
+          style="tasks-icon"
+          cardImg={cardImg3}
           cardTxt="Tasks Settings"
         />
         <CardItem
-          className="identifyBkgd"
-          cardImg={cardImg1}
+          style="social-icon"
+          cardImg={cardImg4}
           cardTxt="Social Interaction"
         />
         <CardItem
-          className="identifyBkgd"
-          cardImg={cardImg1}
+          style="get-icon"
+          cardImg={cardImg5}
           cardTxt="Get Things Done"
         />
       </section>

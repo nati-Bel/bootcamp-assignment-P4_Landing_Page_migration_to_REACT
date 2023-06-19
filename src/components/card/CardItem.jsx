@@ -1,10 +1,10 @@
 import './CardItem.css'
 
-function CardItem ({cardImg, cardTxt}) {
+function CardItem (props) {
     return(
             <div className='card-item-container'>
-                <img className='cardImage' src={cardImg}/>
-                <span className='cardText'>{cardTxt}</span>
+                <img className={props.style} src={props.cardImg}/>
+                <span className='cardText'>{props.cardTxt}</span>
             </div>    
     );
 }

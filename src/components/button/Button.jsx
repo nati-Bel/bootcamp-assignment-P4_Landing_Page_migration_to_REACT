@@ -1,8 +1,11 @@
 import './button.css'
 
-function Button({btnName, btnImage}) {
+function Button(props) {
     return (
-        <button className="btn"><img src={btnImage}/>{btnName}</button>
-    )
+      <button className={props.style}>
+        <img src={props.btnImage} />
+        {props.btnName}
+      </button>
+    );
 }
 export default Button

@@ -1,15 +1,65 @@
-.btn {
-    display: flex;
+.btn-pink {
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
   font-weight: bold;
   background-color: #ff556e;
   color: white;
-  border-style: solid;
   border-color: #ff556e;
   border-radius: 20px;
   padding: 10px 25px 10px 25px;
   gap: 4px;
-  width: max-content;
+  width:min-content;
+  height: fit-content;
+  border-width: 2px;
+}
+
+.btn-white-pink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  color: #ff556e;
+  border-style: solid;
+  border-color: #ff556e;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  gap: 4px;
+  width:min-content;
+  height: fit-content;
+
+}
+
+.btn-square-violet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #9a67e7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 5px 4px 5px;
+  text-align: center;
+
+}
+
+.btn-square-white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #f7fafd;
+  color: #848484;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 5px 4px 5px;
+  text-align: center;
+  
 }

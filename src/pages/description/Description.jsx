@@ -2,7 +2,6 @@ import Button from "../../components/button/Button";
 import screens from "../../multimedia/description-1-app.png"
 import calendar from "../../multimedia/description-2-app.png"
 import "./description.css"
-import SecondaryButton from "../../components/button/ButtonSecondary";
 import scheduleIcon from "../../multimedia/icon-schedule.png";
 import trackingIcon from "../../multimedia/icon-tracking.png";
 import organizeIcon from "../../multimedia/icon-organize.png";
@@ -26,15 +25,27 @@ export default function Description() {
               suscipit tempore maiores cupiditate debitis. Natus autem modi
               esse?
             </p>
-            <Button btnName={"DOWNLOAD"} />
+            <Button style="btn-pink" btnName={"DOWNLOAD"} />
           </div>
         </article>
         <article className="description-schedule-container">
           <div className="description-schedule-tasks">
             <div className="descriptions-schedule-tasks-buttons">
-              <SecondaryButton btnImage={scheduleIcon} btnName={"Schedule"} />
-              <SecondaryButton btnImage={trackingIcon} btnName={"Tracking"} />
-              <SecondaryButton btnImage={organizeIcon} btnName={"Organize"} />
+              <Button
+                style="btn-square-violet"
+                btnImage={scheduleIcon}
+                btnName="Schedule"
+              />
+              <Button
+                style="btn-square-white"
+                btnImage={trackingIcon}
+                btnName="Tracking"
+              />
+              <Button
+                style="btn-square-white"
+                btnImage={organizeIcon}
+                btnName="Organize"
+              />
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
@@ -43,8 +54,8 @@ export default function Description() {
               aut facilis saepe voluptas ipsa.
             </p>
             <div className="description-schedule-tasks-privacy-buttons">
-              <Button btnName="TERMS" />
-              <Button btnName="PRIVACY" />
+              <Button style="btn-pink" btnName="TERMS" />
+              <Button style="btn-white-pink" btnName="PRIVACY" />
             </div>
           </div>
           <img src={calendar} className="description-schedule-image" />

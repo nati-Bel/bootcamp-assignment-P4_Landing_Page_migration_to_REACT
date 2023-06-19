@@ -83,10 +83,38 @@
   padding-bottom: 40px;
 }
 
-.identifyBkgd {
-background-color: #848484;
+.identify-icon {
+background-color: #ebe7fa;
     width: 80px;
   padding: 20px;
   border-radius: 50%;
 
+}
+
+.situation-icon {
+  background-color: #daf4ef;
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.tasks-icon {
+  background-color: #f8e5ea;
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.social-icon {
+  background-color: #f8f1de;
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.get-icon {
+  background-color: #e1f2fa;
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
 }

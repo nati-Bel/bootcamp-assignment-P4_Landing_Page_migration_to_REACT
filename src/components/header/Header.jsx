@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 import logo from "../../multimedia/logo.svg";
 import Button from "../button/Button";
 
 const navigation = [
-  { name: "DESCRIPTION", href: "#", current: false },
+  { name: "DESCRIPTION", href: "/description", current: false },
   { name: "FEATURES", href: "#", current: false },
   { name: "SCREENS", href: "#", current: false },
   { name: "EXTRAS", href: "#", current: false },
@@ -35,17 +36,21 @@ export default function Header() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src={logo}
-                    alt="Company logo"
-                  />
-                  <img
-                    className="hidden h-8 w-auto lg:block"
-                    src={logo}
-                    alt="Company logo"
-                  />
+                  <a href="/">
+                    <img
+                      className="block h-8 w-auto lg:hidden"
+                      src={logo}
+                      alt="Company logo"
+                    ></img>
+
+                    <img
+                      className="hidden h-8 w-auto lg:block"
+                      src={logo}
+                      alt="Company logo"
+                    />
+                  </a>
                 </div>
+
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -67,8 +72,7 @@ export default function Header() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <Button btnName={"DOWNLOAD"} />
-                <Button btnName={"LOG IN"}/>
+                <Button btnName={"DOWNLOAD"} style="btn-white-pink" />
               </div>
             </div>
           </div>
@@ -98,3 +102,24 @@ export default function Header() {
     </Disclosure>
   );
 }
+
+/*
+const like = "Like"
+const dislike = "Dislike"
+
+let [TextButtonChange, setTextButtonChange] = useState(like);
+
+function handleClick() {
+  if(TextButtonChange)==like {
+    setTextButtonChange(dislike)
+  }else{setButtonChange(like)}
+} 
+-- setTextButtonChange(TextButtonChange == like? dislike:like)
+--
+Button onClick={handleButton()}
+--
+<button  onClick={props-onClick}>btnName={TextButtonChange}</
+---
+
+*/
+
